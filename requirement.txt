@@ -1,7 +1,0 @@
-pandas
-numpy
-scikit-learn
-scipy
-joblib==1.2.0
-streamlit
-
