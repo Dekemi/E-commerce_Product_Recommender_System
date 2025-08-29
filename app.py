@@ -10,7 +10,7 @@ Original file is located at
 # app.py
 
 
-!pip install joblib
+pip install joblib
 import streamlit as st
 import joblib
 import pandas as pd # To get product descriptions
