@@ -8,3 +8,5 @@ Data source: UC Irvine Machine Learning Repository
 - Trains a **k-Nearest Neighbors (k-NN)** model using cosine similarity.
 - Provides a recommendation function: given a product, return the top-N most similar products.
 - Streamlit web app interface for searching products and viewing recommendations.
+
+Streamlit link: https://e-commerce-recommender-system.streamlit.app/
