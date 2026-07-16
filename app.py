@@ -14,7 +14,7 @@ def load_data():
 
     # Load original data for product descriptions
     df_desc = pd.read_excel("Online Retail.xlsx")
-    df_desc = df_desc[['StockCode', 'Description']].drop_duplicates().set_index('StockCode')
+    df_desc = (df_desc[['StockCode', 'Description']].dropna(subset=["Description"]).drop_duplicates(subset=["StockCode"]).set_index("StockCode"))
 
     return model, matrix, mapper, df_desc
 
