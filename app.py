@@ -50,7 +50,7 @@ selected_stock_code = st.selectbox(
 if selected_stock_code:
     st.subheader(f"Customers who bought '{df_desc.loc[selected_stock_code, 'Description']}' also bought:")
 
-    recs = get_recommendations(selected_stock_code, model_knn, item mapper)
+    recs = get_recommendations(selected_stock_code, model)
 
     if recs:
         for rec_code in recs:
