@@ -1,6 +1,8 @@
 # E-commerce_Product_Recommender_System
 This project is a simple **item-based collaborative filtering recommender** for e-commerce products.  
 It shows "Customers who bought this also bought…" suggestions based on purchase history.
+
+
 Data source: UC Irvine Machine Learning Repository
 
 # Features
