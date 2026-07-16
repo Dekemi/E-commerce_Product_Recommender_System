@@ -58,14 +58,14 @@ selected_stock_code = st.selectbox(
 if selected_stock_code:
     st.subheader(f"Customers who bought '{df_desc.loc[selected_stock_code, 'Description']}' also bought:")
 
-    recs = get_recommendations(selected_stock_code, model)
+    recs = get_recommendations(selected_stock_code, model_knn, item mapper)
 
     if recs:
         for rec_code in recs:
             try:
                 rec_desc = df_desc.loc[rec_code, 'Description']
-                st.write(f"- **{rec_code}**: {rec_desc}")
+                st.write(f"- {rec_desc}")
             except KeyError:
-                st.write(f"- **{rec_code}**: (Description not available)")
+                continue
     else:
-        st.write("Could not find recommendations for this item.")
+        st.write("No recommendations found.")
